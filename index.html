@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/f6/48/a5/f648a590-1fd9-6291-d96c-8f576ad0b162/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Search App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">Image Search App</h1>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for Images" />
+        <button class="search-btn" onclick="searchImages()">Search</button>
+      </div>
+
+      <div id="imageContainer" class="image-grid">
+        <div class="image-card">
+          <img
+            src="https://play-lh.googleusercontent.com/wrJS6wDS7ED0EKpO4kXjstUMimXbNQ0JBiIWJzKPITSvYg60XKQWmKnR-DyG3WfTBo8"
+            alt="Sample"
+          />
+          <span class="zoom-icon">&#128269;</span>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="show-more" onclick="showMore()">Show More</button>
+      </div>
+      <div id="imageModal" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <div class="modal-content">
+          <img id="modalImg" src="" alt="Full Image" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
